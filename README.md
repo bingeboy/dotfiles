@@ -1,7 +1,7 @@
 dotfiles
 ========
 
-Here are my current dotfiles. Warning use are your own risk. I've taken modified these throught the years.
+Here are my dotfiles. Warning use are your own risk.
 
 ###Some Config Settings I run
 ```
