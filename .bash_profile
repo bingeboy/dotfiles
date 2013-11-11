@@ -4,6 +4,13 @@ else : echo "missing work dude"
 fi
 # Set architecture flags
 export ARCHFLAGS="-arch x86_64"
+
+#Set Editor
+export VISUAL=vim
+export EDITOR=$VISUAL
+set -o vi
+echo -n "Shell Option Set to VI"
+
 # Ensure user-installed binaries take precedence. This is for homebrew!
 #export PATH=/usr/local/bin:/usr/bin:/usr/local/share/npm/bin:/usr/sbin:/sbin
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:~/bin:$PATH
