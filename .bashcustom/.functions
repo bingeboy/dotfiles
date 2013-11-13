@@ -1,4 +1,3 @@
-
 # Create a new directory and enter it
 function md() {
     mkdir -p "$@" && cd "$@"
@@ -155,4 +154,10 @@ gifify() {
   else
     echo "proper usage: gifify <input_movie.mov>. You DO need to include extension."
   fi
+}
+
+
+# Run a search from cl
+function google() {
+    open /Applications/Google\ Chrome.app/ "http://www.google.com/search?q= $1";
 }
