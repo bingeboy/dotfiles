@@ -73,3 +73,5 @@ alias Mcompress='chmod 777 compress.sh'
 #echo all dotfiles in current folder
 alias dot="ls -a | grep '^\.'"
 
+alias shutdown='sudo shutdown -h now'
+
