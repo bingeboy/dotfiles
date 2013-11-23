@@ -1,11 +1,38 @@
 dotfiles
 ========
 
-Here are my dotfiles. Warning use are your own risk.
+Here are my dotfiles. Warning use @ your own risk.
 
-###Some Config Settings I run
-```
-git config --global diff.tool vimdiff
-git config --global difftool.prompt false
-git config --global alias.d difftool
-```
+###Plugins in use:
+* CSApprox
+* ag
+* ctrlp.vim
+* delimitMate
+* gist-vim
+* gundo.vim
+* jshint.vim
+* loremipsum
+* nerdcommenter
+* nerdtree
+* node
+* sparkup
+* syntastic
+* tabular
+* tagbar
+* taglist.vim
+* tlib_vim
+* vim-addon-mw-utils
+* vim-easymotion
+* vim-fakeclip
+* vim-fugitive
+* vim-haml
+* vim-jade
+* vim-javascript
+* vim-powerline
+* vim-repeat
+* vim-sensible
+* vim-snipmate
+* vim-snippets
+* vim-surround
+* vundle
+* webapi-vim
