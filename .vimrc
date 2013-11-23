@@ -56,4 +56,8 @@ set wildmenu
 set cpo-=<
 set wcm=<C-Z>
 map <F4> :emenu <C-Z>
+
+"Nerdtree toggle
+nmap <silent> <C-D> :NERDTreeToggle<CR>
+
 "--- End sweet menu
