@@ -24,11 +24,14 @@ defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreS
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string '0.764700 0.976500 0.568600'
 
-# Set computer name (as done via System Preferences → Sharing)
+# Set computer name (as done via System Preferences → Sharing) note you need to append this lochost name in /etc/hosts
 #sudo scutil --set ComputerName "BINGEBOY"
 #sudo scutil --set HostName "BINGEBOY"
 #sudo scutil --set LocalHostName "BINGEBOY"
 #sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "BINGEBOY"
+
+#Allow for text selcetion in preview.
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE
 
 # Disable smooth scrolling
 # (Uncomment if you’re on an older Mac that messes up the animation)
