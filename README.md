@@ -3,6 +3,18 @@ dotfiles
 
 Here are my dotfiles. Warning use @ your own risk.
 
+### Install
+These dot files are setup to run from a home directory from osx.
+
+Sym link the following to home
+```
+ln -s ~/dotfiles/.bash_profile ~/.bash_profile
+ln -s ~/dotfiles/.vim ~/.vim
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.viminfo ~/.viminfo
+ln -s ~/dotfiles/.tmux.conf ~/.tmux
+
+
 ###Plugins in use:
 * CSApprox
 * ag

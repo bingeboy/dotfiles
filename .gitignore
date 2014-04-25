@@ -38,6 +38,7 @@ Thumbs.db
 .work
 .joyent
 .mine
+
 # Drupal #
 ##########
 sites/*/settings*.php
@@ -53,3 +54,5 @@ sites/*/private
 *.sublime-project
 *.sublime-workspace
 *.sublime-projectcompletions
+
+vim/view/*
