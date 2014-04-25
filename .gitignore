@@ -55,4 +55,4 @@ sites/*/private
 *.sublime-workspace
 *.sublime-projectcompletions
 
-vim/view/*
+.vim/view/*
