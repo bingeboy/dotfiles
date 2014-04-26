@@ -4,7 +4,14 @@ dotfiles
 Here are my dotfiles. Warning use @ your own risk.
 
 ### Install
-These dot files are setup to run from a home directory from osx.
+The following will generate specific symlinks predefined in the folder.
+
+```
+cd ~
+git clone https://github.com/bingeboy/dotfiles
+cd dotfiles
+node symcreator
+```
 
 Sym link the following to home
 ```
