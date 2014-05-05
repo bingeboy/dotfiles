@@ -1,8 +1,11 @@
 var fs = require("fs");
 
-//TODO create an object and loop through it instead of defining each sym link manual
 
-fs.symlink("~/dotfiles/.bash_profile", "~/.bash_profile2", "file", function(err){
+//TODO create an object and loop through it instead of defining each sym link manual
+var home = __dirname;
+console.log(home);
+
+fs.symlink(home + "/dotfiles/.bash_profile", home + "/.bash_profile", "file", function(err){
     if(err) {
         console.log(err)
         return;
@@ -11,7 +14,7 @@ fs.symlink("~/dotfiles/.bash_profile", "~/.bash_profile2", "file", function(err)
 });
 
 
-fs.symlink("~/dotfiles/.bashcustom", "~/.bashcustom", "dir", function(err){
+fs.symlink(home + "/dotfiles/.bashcustom", home + "/.bashcustom", "dir", function(err){
     if(err) {
         console.log(err)
         return;
@@ -19,16 +22,16 @@ fs.symlink("~/dotfiles/.bashcustom", "~/.bashcustom", "dir", function(err){
     console.log("bashcustom completed")
 });
 
-fs.symlink("~/dotfiles/.vim", "~/.vim", "dir", function(err){
+fs.symlink(home + "/dotfiles/.vim", home + "/.vim", "dir", function(err){
     if(err) {
         console.log(err)
         return;
     }
-    console.log("vim completed")
+    console.log("vim folder completed")
 });
 
 
-fs.symlink("~/dotfiles/.vimrc", "~/.vimrc", "file", function(err){
+fs.symlink( home + "/dotfiles/.vimrc", home + "/.vimrc", "file", function(err){
     if(err) {
         console.log(err)
         return;

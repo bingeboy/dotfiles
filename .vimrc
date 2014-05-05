@@ -1,5 +1,5 @@
-set nocompatible               " be iMproved
-filetype off                   " required!
+" put this line first in ~/.vimrc
+set nocompatible | filetype indent plugin on | syn on
 
 "Allow F2 key to toggle paste from outside of vim and retain indents
 set pastetoggle=<F2>
@@ -7,14 +7,19 @@ set pastetoggle=<F2>
 "Set up the clipboard to be shared across termi windows"
 set clipboard=unnamed
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"set rtp+=~/.vim/bundle/vundle/
+
+"call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
 "Bundle 'gmarik/vundle'
 execute pathogen#infect('bundle/{}', '~/.vim/bundle/{}')
-set nocompatible "This fixes the problem where arrow keys do not function properly on some systems.
+"execute pathogen#infect()
+"Helptags
+let g:Powerline_symbols = 'fancy'
+
+"se nocompatible "This fixets the problem where arrow keys do not function properly on some systems.
 syntax on  "Enables syntax highlighting for programming languages
 set mouse=a  "Allows you to click around the text editor with your mouse to move the cursor
 set showmatch "Highlights matching brackets in programming languages

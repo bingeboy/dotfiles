@@ -2,7 +2,6 @@
 " Maintainer:   Tim Pope <http://tpo.pe/>
 " Version:      2.2
 
-" Install in ~/.vim/autoload (or ~\vimfiles\autoload).
 "
 " For management of individually installed plugins in ~/.vim/bundle (or
 " ~\vimfiles\bundle), adding `execute pathogen#infect()` to the top of your

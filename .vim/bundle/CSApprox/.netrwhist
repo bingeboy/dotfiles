@@ -1,10 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/bingeboy/.bashcustom'
-let g:netrw_dirhist_2='/Users/bingeboy/Dropbox/GitHub/grateful-web-base'
-let g:netrw_dirhist_3='/Users/bingeboy/monkeyWrench/.alias'
-let g:netrw_dirhist_4='/Users/bingeboy/Dropbox'
-let g:netrw_dirhist_5='scp://jmcgarrity@jpmcgarrity.com/public_html/'
-let g:netrw_dirhist_6='scp://jmcgarr@jpmcgarrity.com/public_html/'
-let g:netrw_dirhist_7='scp://jmcgarr@jpmcgarrity.com/'
-let g:netrw_dirhist_8='scp://jmcgarr@jpmcgarrity.com/home5/jpmcgarr/public_html/'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/projects/vsdweb/src-fewd/resources/script/page'
