@@ -81,5 +81,7 @@ fi
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 eval "$(rbenv init -)"
 
-#TODO Move to aliases
+#TODO Move to aliases for node repl
 alias node="env NODE_NO_READLINE=1 rlwrap node"
+
+

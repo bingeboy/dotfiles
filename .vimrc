@@ -7,18 +7,24 @@ set pastetoggle=<F2>
 "Set up the clipboard to be shared across termi windows"
 set clipboard=unnamed
 
-"set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'Lokaltog/powerline.git'
+
 
 "call vundle#rc()
-
 " let Vundle manage Vundle
 " required! 
 "Bundle 'gmarik/vundle'
 execute pathogen#infect('bundle/{}', '~/.vim/bundle/{}')
 "execute pathogen#infect()
 "Helptags
-let g:Powerline_symbols = 'fancy'
-
+"let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'unicode'
 "se nocompatible "This fixets the problem where arrow keys do not function properly on some systems.
 syntax on  "Enables syntax highlighting for programming languages
 set mouse=a  "Allows you to click around the text editor with your mouse to move the cursor
