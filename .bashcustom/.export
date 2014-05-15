@@ -1,1 +1,0 @@
-#!/bin/bashexport JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Homeexport EC2_HOME="/usr/bin/ec2-api-tools-1.6.8.0/"export PATH=$PATH:$EC2_HOME/bin#Mavenexport MAVEN_OPTS="-XX:MaxPermSize=1024m -Dmaven.test.skip=true"#RubyIexport PATH=/var/lib/gems/1.8/bin:$PATH#node prefixexport PATH=$HOME/local/node/bin:/usr/local/bin:$PATH

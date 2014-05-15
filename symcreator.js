@@ -5,7 +5,7 @@ var fs = require("fs");
 var home = __dirname;
 console.log(home);
 
-fs.symlink(home + "/dotfiles/.bash_profile", home + "/.bash_profile", "file", function(err){
+fs.symlink(home + "/dotfiles/bash_profile", home + "/.bash_profile", "file", function(err){
     if(err) {
         console.log(err)
         return;
@@ -14,7 +14,7 @@ fs.symlink(home + "/dotfiles/.bash_profile", home + "/.bash_profile", "file", fu
 });
 
 
-fs.symlink(home + "/dotfiles/.bashcustom", home + "/.bashcustom", "dir", function(err){
+fs.symlink(home + "/dotfiles/bashcustom", home + "/.bashcustom", "dir", function(err){
     if(err) {
         console.log(err)
         return;
@@ -22,7 +22,7 @@ fs.symlink(home + "/dotfiles/.bashcustom", home + "/.bashcustom", "dir", functio
     console.log("bashcustom completed")
 });
 
-fs.symlink(home + "/dotfiles/.vim", home + "/.vim", "dir", function(err){
+fs.symlink(home + "/dotfiles/vim", home + "/.vim", "dir", function(err){
     if(err) {
         console.log(err)
         return;
@@ -31,7 +31,24 @@ fs.symlink(home + "/dotfiles/.vim", home + "/.vim", "dir", function(err){
 });
 
 
-fs.symlink( home + "/dotfiles/.vimrc", home + "/.vimrc", "file", function(err){
+fs.symlink( home + "/dotfiles/vimrc", home + "/.vimrc", "file", function(err){
+    if(err) {
+        console.log(err)
+        return;
+    }
+    console.log("vimrc completed")
+});
+
+fs.symlink( home + "/dotfiles/viminfo", home + "/.viminfo", "file", function(err){
+    if(err) {
+        console.log(err)
+        return;
+    }
+    console.log("vimrc completed")
+});
+
+
+fs.symlink( home + "/dotfiles/vimwords.add", home + "/.vimwords.add", "file", function(err){
     if(err) {
         console.log(err)
         return;

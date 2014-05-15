@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#svn
-alias svnremovemissing='svn status | grep '^\!' | cut -c8- | while read f; do svn rm "$f"; done'
-alias svncleanhouse='svn status | grep '^\?' | cut -c8- | while read f; do rm -rf "$f"; done'
-alias svna="svn add . --force"

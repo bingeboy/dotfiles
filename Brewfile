@@ -32,6 +32,7 @@ install php55
 #install ack
 #install exiv2
 install git
+install git-flow
 #install imagemagick
 #install lynx
 install node
