@@ -20,6 +20,12 @@ ln -s ~/dotfiles/.vim ~/.vim
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.viminfo ~/.viminfo
 ln -s ~/dotfiles/.tmux.conf ~/.tmux
+```
+
+###Links to repos
+[https://github.com/wookiehangover/jshint.vim](https://github.com/wookiehangover/jshint.vim)
+[https://github.com/garbas/vim-snipmate](https://github.com/garbas/vim-snipmate)
+
 
 
 ###Plugins in use:
