@@ -58,3 +58,10 @@ fs.symlink( home + "/dotfiles/vimwords.add", home + "/.vimwords.add", "file", fu
 
 
 
+fs.symlink(home + "/dotfiles/fonts", home + "/.fonts", "dir", function(err){
+    if(err) {
+        console.log(err)
+        return;
+    }
+    console.log("bashcustom completed")
+

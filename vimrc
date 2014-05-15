@@ -22,7 +22,8 @@ call vundle#begin()
 execute pathogen#infect('bundle/{}', '~/.vim/bundle/{}')
 "execute pathogen#infect()
 "Helptags
-let g:Powerline_symbols = 'fancy'
+"let g:powerline_loaded = 0
+"let g:Powerline_symbols = 'fancy'
 let mapleader = ","
 "let g:Powerline_symbols = 'unicode'
 syntax on  "Enables syntax highlighting for programming languages
@@ -62,11 +63,14 @@ nmap <silent> <Up> gk
 "--- Ends navigation commands
 "--- The following adds a sweet menu, press F4 to use it.
 source $VIMRUNTIME/menu.vim
-"call pathogen#infect() 
 set wildmenu
 set cpo-=<
 set wcm=<C-Z>
 map <F4> :emenu <C-Z>
+
+set laststatus=2
+set encoding=utf-8
+set fillchars+=stl:\ ,stlnc:\
 
 "Nerdtree toggle
 nmap <silent> <C-D> :NERDTreeToggle<CR>
