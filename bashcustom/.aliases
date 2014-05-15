@@ -1,0 +1,77 @@
+#!/bin/bash
+
+#Easier navigation: .., ..., ~ and -
+alias ..="cd .."
+alias cd..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+#-To take whats in your clipboard and replace it with the same text, but stripped of html tags
+alias stripHTML="pbpaste | sed -e 's/<[^>]*>//g' | pbcopy"
+alias l="ls -alFhG"
+#-Quick ip checkers
+alias en0="ipconfig getifaddr en0"
+alias en1="ipconfig getifaddr en1"
+
+#-Dont delete your files by accident
+alias rm="rm -i"
+
+#custom project quick paths
+alias gapp="cd ~/Dropbox/GitHub/"
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
+# View HTTP traffic
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
+#reload bash session
+alias refresh="source ~/.bash_profile"
+alias gapp="cd ~/Dropbox/GitHub/"
+
+# Shortcuts
+alias g="git"
+alias v="vim"
+
+# File size
+alias fs="stat -f \"%z bytes\""
+
+# Empty the Trash on all mounted volumes and the main HDD
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
+
+# Hide/show all desktop icons (useful when presenting)
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+#work
+alias projects="cd ~/projects"
+alias basha="cd ~/ && mate .bash_profile"
+alias ll="ls -lt"
+alias hosts="mate /etc/hosts"
+
+#Tail mongodb:
+alias tailMongo="tail -f /usr/local/var/log/mongodb/mongo.log"
+
+#open quicktime:
+alias quicktime="open -a /Applications/QuickTime\ Player.app/"
+
+alias ll="ls -lt"
+
+alias hosts='mate /etc/hosts'
+alias httpd='mate /etc/apache2/httpd.conf'
+alias computer='top'
+alias web='cd /Library/WebServer/Documents/'
+alias mC='cd /Library/WebServer/Documents/mobilecommerce/svn/mobile/'
+alias mobilescript='cd /Library/WebServer/Documents/mobilecommerce/svn/mobile/docroot/source'
+alias iphone="(cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/ && open -a iPhone\ Simulator.app)" 
+alias twitterApp='cd /Volumes/User\ Data/Users/jmcgarrity/Dropbox/D\&D\ App/nodeTwitter'
+alias Mcompress='chmod 777 compress.sh'
+
+#echo all dotfiles in current folder
+alias dot="ls -a | grep '^\.'"
+
+alias shutdown='sudo shutdown -h now'
+
