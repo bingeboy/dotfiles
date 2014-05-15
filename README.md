@@ -3,6 +3,8 @@ dotfiles
 
 Here are my dotfiles. Warning use @ your own risk.
 
+If you are having issues with your localhost read this: `http://osxdaily.com/2012/10/24/set-the-hostname-computer-name-and-bonjour-name-separately-in-os-x/`
+
 ### Install
 The following will generate specific symlinks predefined in the folder.
 
