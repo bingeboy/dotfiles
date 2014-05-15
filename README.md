@@ -24,7 +24,7 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux
 
 ###Links to repos
 [https://github.com/wookiehangover/jshint.vim](https://github.com/wookiehangover/jshint.vim)
-
+[https://github.com/garbas/vim-snipmate](https://github.com/garbas/vim-snipmate)
 
 
 
