@@ -22,6 +22,11 @@ ln -s ~/dotfiles/.viminfo ~/.viminfo
 ln -s ~/dotfiles/.tmux.conf ~/.tmux
 
 
+###Links to repos
+[https://github.com/wookiehangover/jshint.vim](https://github.com/wookiehangover/jshint.vim)
+
+
+
 ###Plugins in use:
 * CSApprox
 * ag
