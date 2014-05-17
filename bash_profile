@@ -59,6 +59,12 @@ function usernamehost() {
 	if [ $USER != "$default_username" ]; then echo "${MAGENTA}$USER ${WHITE}at ${ORANGE}$HOSTNAME $WHITEin "; fi
 }
 
+function ffind(){
+ find ./ -iname $1
+}
+
+
+
 #Prompt 
 #PS1="[\[\033[36m\]\u\[\033[37m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]]$ "
 PS1="🍕 \[$(tput setaf 2)\] \W \[$(tput setaf 3)\]$ \[$(tput setaf 7)\]"
@@ -81,7 +87,5 @@ fi
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 eval "$(rbenv init -)"
 
-#TODO Move to aliases for node repl
-alias node="env NODE_NO_READLINE=1 rlwrap node"
 
 

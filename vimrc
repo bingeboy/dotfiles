@@ -9,7 +9,7 @@ set pastetoggle=<F2>
 set clipboard=unnamed
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"call vundle#begin()
 "Plugin 'gmarik/Vundle.vim'
 "Plugin 'tpope/vim-fugitive'
 "Plugin 'git://git.wincent.com/command-t.git'
@@ -74,3 +74,6 @@ set fillchars+=stl:\ ,stlnc:\
 
 "Nerdtree toggle
 nmap <silent> <C-D> :NERDTreeToggle<CR>
+
+"format JSON 
+map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>

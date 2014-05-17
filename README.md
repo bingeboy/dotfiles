@@ -24,6 +24,18 @@ ln -s ~/dotfiles/.viminfo ~/.viminfo
 ln -s ~/dotfiles/.tmux.conf ~/.tmux
 ```
 
+### Format JSON in VIM 
+[http://visibletrap.blogspot.com/2010/05/vim-how-to-format-and-syntax-highlight.html](http://visibletrap.blogspot.com/2010/05/vim-how-to-format-and-syntax-highlight.html)
+```
+
+Run this command in shell 
+sudo cpan JSON::XS
+Put this line to ~/.vimrc 
+map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
+When want to format JSON file press
+\jt
+```
+
 ###Links to repos
 [https://github.com/wookiehangover/jshint.vim](https://github.com/wookiehangover/jshint.vim)
 [https://github.com/garbas/vim-snipmate](https://github.com/garbas/vim-snipmate)
