@@ -24,6 +24,9 @@ ln -s ~/dotfiles/.viminfo ~/.viminfo
 ln -s ~/dotfiles/.tmux.conf ~/.tmux
 ```
 
+**Perl BREW:
+[http://perlbrew.pl/](http://perlbrew.pl/)
+
 ### Format JSON in VIM 
 [http://visibletrap.blogspot.com/2010/05/vim-how-to-format-and-syntax-highlight.html](http://visibletrap.blogspot.com/2010/05/vim-how-to-format-and-syntax-highlight.html)
 ```

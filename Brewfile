@@ -43,6 +43,7 @@ install tree
 install nmap
 #install webkit2png
 #install zopfli
+install cpanm 
 
 tap homebrew/versions
 install lua52
