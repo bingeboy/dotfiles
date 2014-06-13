@@ -1,4 +1,5 @@
 #!/bin/bash
+export PATH=~/Developer/Scripts:$PATH
 
 #sudo nvram boot-args="-v"
 #sudo nvram SystemAudioVolume=%80
@@ -13,12 +14,6 @@ set -o vi
 
 # Set architecture flags
 export ARCHFLAGS="-arch x86_64"
-# Ensure user-installed binaries take precedence. This is for homebrew!
-#export PATH=/usr/local/bin:/usr/bin:/usr/local/share/npm/bin:/usr/sbin:/sbin
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:~/bin:$PATH
-#export NODE_PATH=/usr/local/lib/node
-export NODE_PATH=$NODE_PATH:/usr/local/share/npm/lib/node_modules
-#export PATH=/usr/local/share/npm/bin:$PATH
 
 bell=`tput bel`
 precmd () { 
@@ -35,11 +30,12 @@ $(tput setaf 1)Weather............: $(tput setaf 3)Brooklyn `curl -s "http://rss
 $(tput sgr0)"
 
 #Bring in all the dotfiles
-for file in ~/dotfiles/bashcustom/.{aliases,colors,commands,export,functions,svnextras,work,mine,osx}; do
+for file in ~/dotfiles/bashcustom/.{aliases,colors,commands,export,cnbashrc,funtions,svnextras,work,mine}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
 
+#for file in ~/dotfiles/bashcustom/.{aliases,colors,commands,export,cnbashrc,functions,svnextras,work,mine,osx}; do
 
 function git_info() {
 	# check if we're in a git repo

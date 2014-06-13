@@ -65,3 +65,4 @@ fs.symlink(home + "/dotfiles/fonts", home + "/.fonts", "dir", function(err){
     }
     console.log("bashcustom completed")
 
+});

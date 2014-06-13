@@ -17,16 +17,6 @@ echo "SSH Key copied in your clipboard";
  
 }
 
-
-#this echo should have yellow text.
-function symlinkdropbox()
-{
-  echo "What is the path to the file if /Dropbox/dotfiles was root?"
-  read dppath
-  `ln -s Dropbox/dotfiles/$dppath ~/$dppath`
-  echo "sym link created tp" ~/$dppath
-}
-
 # rename all the files which contain uppercase letters to lowercase in the current folder
 filestolower()
 {
