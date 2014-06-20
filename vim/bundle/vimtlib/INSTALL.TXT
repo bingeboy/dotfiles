@@ -1,0 +1,115 @@
+* Install from GIT
+
+There are several ways to install plugins from source code repository 
+(e.g. github). The easiest way is to install it as "bundle". In order to 
+do so, clone the source code repository to 
+''~/.vim/bundles/PLUGIN_NAME'' -- on Windows replace ".vim" with 
+"vimfiles". The directory structure should then look something like 
+this:
+
+#Verb <<
+    ~/
+        .vim/   (or vimfiles on Windows)
+            autoload/
+            bundles/
+                tlib_vim/
+                    .git/
+                    autoload/
+                    docs/
+                    plugins/
+                tcomment_vim/
+                    .git/
+                    autoload/
+                    docs/
+                    plugins/
+                ...
+            docs/
+            plugins/
+            ...
+
+The ''pathogen'' plugin probably is the simplest way to make such 
+"bundles" work. Please see also http://vim-scripts.org/vim/tools.html 
+for additional information.
+
+Alternative solutions are described below.
+
+
+** Use macros/tplugin.vim
+
+    1. Save a copy of the tplugin_vim repository 
+       (https://github.com/tomtom/tplugin_vim) under 
+       ''~/.vim/bundles''. 
+       #Verb <<
+       cd ~/.vim/bundles
+       git clone git://github.com/tomtom/tplugin_vim.git
+
+    2. Insert the following line rather at the beginning of your 
+       ''vimrc'' file:
+       #Verb <<
+       runtime bundles/tplugin_vim/macros/tplugin.vim
+
+    3. In VIM, run '':TPluginScan!''
+
+    4. Restart vim. VIM should now load stub definitions for all 
+       commands defined in plugins under the ../bundels directory.
+
+See https://github.com/tomtom/tplugin_vim/doc/tplugin.txt for details.
+
+
+
+** Use Marc Weber's vim-addon-manager
+
+See https://github.com/MarcWeber/vim-addon-manager for details. You can 
+also use the addon manager to download the plugins from github for you.
+
+
+
+** Modify the ''runtimepath'' (e.g. with the pathogen plugin)
+
+Add the path to the local copy to 'runtimepath':
+
+#Code <<
+set runtimepath+={PATH TO YOU LOCAL COPY}/vimtlib
+
+
+
+** Use symbolic links
+
+EXPERIMENTAL: You can use the file install_plugin.sh to copy files from 
+a local copy of a repository to a master .vim directory. Example:
+
+    install_plugin.sh --update vimtlib/*_vim
+
+See "install_plugin.sh --help" for details.
+
+J. Sukumaran provides a slightly simpler script at: 
+https://gist.github.com/580276
+
+You could use tools like graft 
+(http://peters.gormand.com.au/Home/tools/graft/graft-html) for this.
+
+
+
+** Build vimballs
+
+Vimball recipes for the following plugins are located in the vimballs 
+subdirectory.
+
+In the ruby subdirectory, there is a ruby-based script that helps 
+automating this process. If you have ruby installed, type 
+''...vimtlib/ruby/vimball.rb -h'' to find out which command-line options 
+to use. Re-generate all vimballs with ''make -f Makefile_vimtlib 
+VIMTLIB=... vba''.
+
+See also:
+
+    - [[http://www.vim.org/scripts/script.php?script_id=1502]\
+      [\VimBall plugin]]
+    - [[http://vim.wikia.com/wiki/Using_VimBall_with_make]\
+      [Using \VimBall with make]]
+    - [[http://mysite.verizon.net/astronaut/src/index.html#MKVIMBALL]\
+      [C-based program to handle vimballs]]
+
+
+
+% vi: ft=viki:tw=72:ts=4

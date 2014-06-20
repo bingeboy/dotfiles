@@ -1,8 +1,7 @@
 [ui]
 username = jmcgarr1 <jmcgarr1@condenast.com>
 [extensions]
-flow = /Users/jmcgarr1/.hgext/hgflow.py
-attic = /Users/jmcgarr1/.hgext/attic.py
+flow = ~/.hgext/hgflow.py
 mq =
 transplant = 
 shelve = 

@@ -1,0 +1,8 @@
+doc/rcom.txt
+ftplugin/r/rcom.vim
+autoload/rcom.vim
+autoload/rcom/base.vim
+autoload/rcom/rcom.vim
+autoload/rcom/rcom_vim.R
+autoload/rcom/rserve.vim
+autoload/rcom/screen.vim

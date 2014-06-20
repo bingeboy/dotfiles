@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 #Easier navigation: .., ..., ~ and -
 alias ..="cd .."
@@ -75,3 +75,5 @@ alias dot="ls -a | grep '^\.'"
 
 alias shutdown='sudo shutdown -h now'
 
+#Gold
+alias golfdev="cd ~/Developer/workspace/hg/jmcgarr1_golfdigest_2044/sites/golfdigest/golfdigest.war/WEB-INF"

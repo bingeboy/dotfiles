@@ -1,0 +1,5 @@
+plugin/02tlib.vim
+doc/tlib.txt
+test/tlib.vim
+autoload/tlib.vim
+autoload/tlib/*.vim

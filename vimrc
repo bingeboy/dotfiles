@@ -4,9 +4,10 @@ set nocompatible | filetype indent plugin on | syn on
 
 "Allow F2 key to toggle paste from outside of vim and retain indents
 set pastetoggle=<F2>
-
+set clipboard=unnamed
 "Set up the clipboard to be shared across termi windows"
 set clipboard=unnamed
+
 
 set rtp+=~/.vim/bundle/Vundle.vim
 "call vundle#begin()
