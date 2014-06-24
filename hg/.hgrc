@@ -2,7 +2,14 @@
 username = jmcgarr1 <jmcgarr1@condenast.com>
 [extensions]
 flow = ~/.hgext/hgflow.py
+color = 
+extdiff =
+graphlog = 
+hgk = 
+purge =
+rebase = 
 mq =
 transplant = 
 shelve = 
+
 
