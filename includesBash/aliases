@@ -1,3 +1,8 @@
+alias tailmongo='tail -f /usr/local/var/log/mongodb/mongo.log'
+
+#conde move to work file
+alias golfpro='cd ~/golf/projects/golfdigest'
+alias golfdev="cd ~/Developer/workspace/hg/jmcgarr1_golfdigest_2044/sites/golfdigest/golfdigest.war/WEB-INF"
 
 
 #Easier navigation: .., ..., ~ and -
@@ -20,7 +25,7 @@ alias en1="ipconfig getifaddr en1"
 alias rm="rm -i"
 
 #custom project quick paths
-alias gapp="cd ~/Dropbox/GitHub/"
+alias gapp="cd ~/Sync/GitHub/"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
@@ -37,7 +42,7 @@ alias g="git"
 alias v="vim"
 
 # File size
-alias fs="stat -f \"%z bytes\""
+alias filesize="stat -f \"%z bytes\""
 
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
@@ -60,14 +65,10 @@ alias quicktime="open -a /Applications/QuickTime\ Player.app/"
 
 alias ll="ls -lt"
 
-alias hosts='mate /etc/hosts'
-alias httpd='mate /etc/apache2/httpd.conf'
-alias computer='top'
-alias web='cd /Library/WebServer/Documents/'
+alias hosts='vim /etc/hosts'
+alias httpd='vim /etc/apache2/httpd.conf'
 alias mC='cd /Library/WebServer/Documents/mobilecommerce/svn/mobile/'
-alias mobilescript='cd /Library/WebServer/Documents/mobilecommerce/svn/mobile/docroot/source'
 alias iphone="(cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/ && open -a iPhone\ Simulator.app)" 
-alias twitterApp='cd /Volumes/User\ Data/Users/jmcgarrity/Dropbox/D\&D\ App/nodeTwitter'
 alias Mcompress='chmod 777 compress.sh'
 
 #echo all dotfiles in current folder
@@ -75,5 +76,3 @@ alias dot="ls -a | grep '^\.'"
 
 alias shutdown='sudo shutdown -h now'
 
-#Gold
-alias golfdev="cd ~/Developer/workspace/hg/jmcgarr1_golfdigest_2044/sites/golfdigest/golfdigest.war/WEB-INF"

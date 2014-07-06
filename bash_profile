@@ -1,4 +1,8 @@
 #!/bin/bash
+
+############### HOT MESS ###################################
+
+#export PATH='/usr/local/bin:$PATH'
 export PATH=~/Developer/Scripts:$PATH
 
 #sudo nvram boot-args="-v"
@@ -25,17 +29,15 @@ RPROMPT=''
 #Welcome Screen
 echo "$(tput setaf 2)
 `date +"%A, %e %B %Y, %X %Z"`
-$(tput setaf 1)IP Addresses.......: $(tput setaf 6)`ipconfig getifaddr en0` and `wget -q -O - http://icanhazip.com/ | tail`
-$(tput setaf 1)Weather............: $(tput setaf 3)Brooklyn `curl -s "http://rss.accuweather.com/rss/liveweather_rss.asp?metric=211&LOCCODE=11211" | sed -n '/Currently:/ s/.*: \(.*\): \([0-9]*\)\([CF]\).*/\2°\3, \1/p'`
 $(tput sgr0)"
 
 #Bring in all the dotfiles
-for file in ~/dotfiles/bashcustom/.{aliases,colors,commands,export,cnbashrc,funtions,svnextras,work,mine}; do
+for file in ~/dotfiles/includesBash/{aliases,colors,commands,gitcompletetion,export,cnbashrc,funtions,git,work,mine}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
 
-#for file in ~/dotfiles/bashcustom/.{aliases,colors,commands,export,cnbashrc,functions,svnextras,work,mine,osx}; do
+#for file in ~/dotfiles/includesBash/.{aliases,colors,commands,export,cnbashrc,functions,svnextras,work,mine,osx}; do
 
 function git_info() {
 	# check if we're in a git repo
@@ -61,7 +63,7 @@ function ffind(){
 
 
 
-#Prompt 
+#Pizzq Prompt 
 #PS1="[\[\033[36m\]\u\[\033[37m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]]$ "
 PS1="🍕 \[$(tput setaf 2)\] \W \[$(tput setaf 3)\]$ \[$(tput setaf 7)\]"
 
@@ -72,16 +74,20 @@ export testNumber='+19173650744'
 #RAM FOR MAVEN
 export MAVEN_OPTS="-XX:MaxPermSize=512m -Dmaven.test.skip=true";
 
-#Mongod tail
 alias tailmongo='tail -f /usr/local/var/log/mongodb/mongo.log'
+alias golfpro='cd ~/golf/projects/golfdigest'
 
 #git auto complete
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+#RVM not installed kid! Uncomment the below when you install 
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
+#old commened out hotness when you have a fast connection 
 
+#$(tput setaf 1)Weather............: $(tput setaf 3)Brooklyn `curl -s "http://rss.accuweather.com/rss/liveweather_rss.asp?metric=211&LOCCODE=11211" | sed -n '/Currently:/ s/.*: \(.*\): \([0-9]*\)\([CF]\).*/\2°\3, \1/p'`
 
+#$(tput setaf 1)IP Addresses.......: $(tput setaf 6)`ipconfig getifaddr en0` and `wget -q -O - http://icanhazip.com/ | tail`
