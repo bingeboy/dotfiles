@@ -3,29 +3,11 @@ dotfiles
 
 Here are my dotfiles. Warning use @ your own risk.
 
-If you are having issues with your localhost read this: `http://osxdaily.com/2012/10/24/set-the-hostname-computer-name-and-bonjour-name-separately-in-os-x/`
+If you are having issues with your localhost read this:
+[hostname computername](http://osxdaily.com/2012/10/24/set-the-hostname-computer-name-and-bonjour-name-separately-in-os-x/)
 
 ### Install
-The following will generate specific symlinks predefined in the folder.
-
-```
-cd ~
-git clone https://github.com/bingeboy/dotfiles
-cd dotfiles
-node symcreator
-```
-
-Sym link the following to home
-```
-ln -s ~/dotfiles/.bash_profile ~/.bash_profile
-ln -s ~/dotfiles/.vim ~/.vim
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.viminfo ~/.viminfo
-ln -s ~/dotfiles/.tmux.conf ~/.tmux
-```
-
-**Perl BREW:
-[http://perlbrew.pl/](http://perlbrew.pl/)
+ln -s YOURPATH/dotfiles/includesBash/*
 
 ### Format JSON in VIM 
 [http://visibletrap.blogspot.com/2010/05/vim-how-to-format-and-syntax-highlight.html](http://visibletrap.blogspot.com/2010/05/vim-how-to-format-and-syntax-highlight.html)
@@ -39,13 +21,7 @@ When want to format JSON file press
 \jt
 ```
 
-###Links to repos
-[https://github.com/wookiehangover/jshint.vim](https://github.com/wookiehangover/jshint.vim)
-[https://github.com/garbas/vim-snipmate](https://github.com/garbas/vim-snipmate)
-
-
-
-###Plugins in use:
+###vim
 * CSApprox
 * ag
 * ctrlp.vim
