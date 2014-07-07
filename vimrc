@@ -8,6 +8,8 @@ set clipboard=unnamed
 "Set up the clipboard to be shared across termi windows"
 set clipboard=unnamed
 
+"ignorecase 
+set ignorecase
 
 set rtp+=~/.vim/bundle/Vundle.vim
 "call vundle#begin()
