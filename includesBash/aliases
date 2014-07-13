@@ -37,10 +37,6 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 alias refresh="source ~/.bash_profile"
 alias gapp="cd ~/Dropbox/GitHub/"
 
-# Shortcuts
-alias g="git"
-alias v="vim"
-
 # File size
 alias filesize="stat -f \"%z bytes\""
 
