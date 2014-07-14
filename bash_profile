@@ -3,8 +3,8 @@
 ############### HOT MESS ###################################
 
 #export PATH='/usr/local/bin:$PATH'
-export PATH=~/Developer/Scripts:$PATH
-
+export PATH=$HOME/Developer/Scripts:$PATH
+#:$GOPATH/bin
 #sudo nvram boot-args="-v"
 #sudo nvram SystemAudioVolume=%80
 #Set Editor
@@ -72,7 +72,7 @@ export PATH=$PATH:$EC2_HOME/bin
 export testNumber='+19173650744'
 
 #RAM FOR MAVEN
-export MAVEN_OPTS="-XX:MaxPermSize=512m -Dmaven.test.skip=true";
+#export MAVEN_OPTS="-XX:MaxPermSize=512m -Dmaven.test.skip=true";
 
 alias tailmongo='tail -f /usr/local/var/log/mongodb/mongo.log'
 alias golfpro='cd ~/golf/projects/golfdigest'
@@ -91,3 +91,6 @@ fi
 #$(tput setaf 1)Weather............: $(tput setaf 3)Brooklyn `curl -s "http://rss.accuweather.com/rss/liveweather_rss.asp?metric=211&LOCCODE=11211" | sed -n '/Currently:/ s/.*: \(.*\): \([0-9]*\)\([CF]\).*/\2°\3, \1/p'`
 
 #$(tput setaf 1)IP Addresses.......: $(tput setaf 6)`ipconfig getifaddr en0` and `wget -q -O - http://icanhazip.com/ | tail`
+
+export NVM_DIR="/Users/jmcgarr1/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
