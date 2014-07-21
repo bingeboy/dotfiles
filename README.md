@@ -46,7 +46,6 @@ When want to format JSON file press
 * vim-haml
 * vim-jade
 * vim-javascript
-* vim-powerline
 * vim-repeat
 * vim-sensible
 * vim-snipmate

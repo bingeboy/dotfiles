@@ -38,7 +38,7 @@ set backspace=2  "This makes the backspace key function like it does in other pr
 set tabstop=2  "How much space Vim gives to a tab
 set number  "Enables line numbering
 set smarttab  "Improves tabbing
-set shiftwidth=4  "Assists code formatting
+set shiftwidth=2  "Assists code formatting
 set splitbelow " New window goes below
 set splitright " New windows goes right
 set smartcase

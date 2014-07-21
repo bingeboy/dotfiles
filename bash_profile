@@ -29,6 +29,7 @@ RPROMPT=''
 #Welcome Screen
 echo "$(tput setaf 2)
 `date +"%A, %e %B %Y, %X %Z"`
+$(tput setaf 1)IP Addresses.......: $(tput setaf 6)`ipconfig getifaddr en0` and `wget -q -O - http://icanhazip.com/ | tail`
 $(tput sgr0)"
 
 #Bring in all the dotfiles
@@ -62,7 +63,6 @@ function ffind(){
 }
 
 
-
 #Pizzq Prompt 
 #PS1="[\[\033[36m\]\u\[\033[37m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]]$ "
 PS1="🍕 \[$(tput setaf 2)\] \W \[$(tput setaf 3)\]$ \[$(tput setaf 7)\]"
@@ -90,7 +90,6 @@ fi
 
 #$(tput setaf 1)Weather............: $(tput setaf 3)Brooklyn `curl -s "http://rss.accuweather.com/rss/liveweather_rss.asp?metric=211&LOCCODE=11211" | sed -n '/Currently:/ s/.*: \(.*\): \([0-9]*\)\([CF]\).*/\2°\3, \1/p'`
 
-#$(tput setaf 1)IP Addresses.......: $(tput setaf 6)`ipconfig getifaddr en0` and `wget -q -O - http://icanhazip.com/ | tail`
 
 export NVM_DIR="/Users/jmcgarr1/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
