@@ -33,7 +33,7 @@ $(tput setaf 1)IP Addresses.......: $(tput setaf 6)`ipconfig getifaddr en0` and 
 $(tput sgr0)"
 
 #Bring in all the dotfiles
-for file in ~/dotfiles/includesBash/{aliases,colors,commands,gitcompletetion,export,cnbashrc,funtions,git,work,mine}; do
+for file in ~/dotfiles/includesBash/{aliases,colors,commands,gitcompletetion,git-prompt.sh,export,cnbashrc,funtions,git,work,mine}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
