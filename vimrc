@@ -44,7 +44,7 @@ set splitright " New windows goes right
 set smartcase
 set expandtab
 set hidden " When a buffer is brought to foreground, remember undo history and marks.
-set history=1000 " Increase history from 20 default to 1000
+set history=500 " Increase history from 20 default to 1000
 
 " IMPORTANT: Uncomment one of the following lines to force
 " using 256 colors (or 88 colors) if your terminal supports it,
@@ -74,7 +74,7 @@ map <F4> :emenu <C-Z>
 set laststatus=2
 set encoding=utf-8
 set fillchars+=stl:\ ,stlnc:\
-
+set scrolloff=999
 "Nerdtree toggle
 nmap <silent> <C-D> :NERDTreeToggle<CR>
 
