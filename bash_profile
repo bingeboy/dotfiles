@@ -4,6 +4,7 @@
 
 #export PATH='/usr/local/bin:$PATH'
 export PATH=$HOME/Developer/Scripts:$PATH
+
 #:$GOPATH/bin
 #sudo nvram boot-args="-v"
 #sudo nvram SystemAudioVolume=%80
@@ -70,6 +71,9 @@ PS1="🍕 \[$(tput setaf 2)\] \W \[$(tput setaf 3)\]$ \[$(tput setaf 7)\]"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$PATH:$EC2_HOME/bin
 export testNumber='+19173650744'
+#export NODE_COPILOT_API='localhost'
+#export NODE_COPILOT_PORT='8080'
+#export AUTOPILOT_SDKPORT='8080'
 
 #RAM FOR MAVEN
 #export MAVEN_OPTS="-XX:MaxPermSize=512m -Dmaven.test.skip=true";

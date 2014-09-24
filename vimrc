@@ -80,3 +80,8 @@ nmap <silent> <C-D> :NERDTreeToggle<CR>
 
 "format JSON 
 map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
+
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
