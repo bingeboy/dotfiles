@@ -11,7 +11,7 @@ export PATH=$HOME/Developer/Scripts:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin
 #Set Editor
 export VISUAL= vim
 export EDITOR=$VISUAL
-export VIM=/urs/local/share/vim 
+#export VIM=/usr/local/share/vim 
 set -o vi
 
 

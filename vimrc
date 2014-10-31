@@ -1,6 +1,7 @@
 set shell=/bin/bash
 " put this line first in ~/.vimrc
 set nocompatible | filetype indent plugin on | syn on
+"set nocompatible
 
 "Allow F2 key to toggle paste from outside of vim and retain indents
 set pastetoggle=<F2>
@@ -54,9 +55,9 @@ set t_Co=256
 "set t_Co=88
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 
-colorscheme lightline  "Changes the color scheme. Change this to your liking. Lookin /usr/share/vim/vim73/colors/ for options.
+colorscheme molokai "Changes the color scheme. Change this to your liking. Lookin /usr/share/vim/vim73/colors/ for options.
 setlocal spell  "Enables spell checking (CURRENTLY DISABLED because it's kinda annoying). Make sure to uncomment the next line if you use this.
-set spellfile=~/.vimwords.add  "The location of the spellcheck dictionary. Uncomment this line if you uncomment the previous line.
+"set spellfile=~/.vimwords.add  "The location of the spellcheck dictionary. Uncomment this line if you uncomment the previous line.
 set foldmethod=manual  "Lets you hide sections of code
 map <Leader> <Plug>(easymotion-prefix)
 "--- The following commands make the navigation keys work like standard editors
@@ -66,7 +67,7 @@ nmap <silent> <Down> gj
 nmap <silent> <Up> gk
 "--- Ends navigation commands
 "--- The following adds a sweet menu, press F4 to use it.
-source $VIMRUNTIME/menu.vim
+"source $VIMRUNTIME/menu.vim
 set wildmenu
 set cpo-=<
 set wcm=<C-Z>
@@ -77,13 +78,20 @@ set encoding=utf-8
 set fillchars+=stl:\ ,stlnc:\
 set scrolloff=999
 
-let g:syntastic_mode_map = { 'mode': 'passive',
-    \ 'active_filetypes': [''],
-    \ 'passive_filetypes': ['javascript'] }
+"show invinsibles
+set listchars=eol:¬,tab:>-,extends:>,precedes:<
+"trail:*
+set list
+"Invisible character colors 
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
 
-let g:syntastic_javascript_checkers = 'eslint'
-let g:syntastic_error_symbol = '✗'
-let g:syntastic_warning_symbol = '!'
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_mode_map = { 'mode': 'active',
+\ 'active_filetypes': ['javascript','eslint'],
+\ 'passive_filetypes': ['javascript','eslint']
+\}
 "Nerdtree toggle
 nmap <silent> <C-D> :NERDTreeToggle<CR>
 
