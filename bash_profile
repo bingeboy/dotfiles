@@ -3,15 +3,15 @@
 ############### HOT MESS ###################################
 #Get git for ps1
 source ~/.git-prompt.sh
-#export PATH='/usr/local/bin:$PATH'
-export PATH=$HOME/Developer/Scripts:$PATH
+export PATH=$HOME/Developer/Scripts:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/share/:$PATH
 
 #:$GOPATH/bin
 #sudo nvram boot-args="-v"
 #sudo nvram SystemAudioVolume=%80
 #Set Editor
-export VISUAL=vim
+export VISUAL= vim
 export EDITOR=$VISUAL
+export VIM=/urs/local/share/vim 
 set -o vi
 
 
