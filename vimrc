@@ -76,6 +76,14 @@ set laststatus=2
 set encoding=utf-8
 set fillchars+=stl:\ ,stlnc:\
 set scrolloff=999
+
+let g:syntastic_mode_map = { 'mode': 'passive',
+    \ 'active_filetypes': [''],
+    \ 'passive_filetypes': ['javascript'] }
+
+let g:syntastic_javascript_checkers = 'jshint'
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '!'
 "Nerdtree toggle
 nmap <silent> <C-D> :NERDTreeToggle<CR>
 
