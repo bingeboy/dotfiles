@@ -32,6 +32,7 @@ let mapleader = ","
 syntax on  "Enables syntax highlighting for programming languages
 set mouse=a  "Allows you to click around the text editor with your mouse to move the cursor
 set showmatch "Highlights matching brackets in programming languages
+set matchtime=2
 set autoindent  "If you're indented, new lines will also be indented
 set smartindent  "Automatically indents lines after opening a bracket in programming languages
 set backspace=2  "This makes the backspace key function like it does in other programs.

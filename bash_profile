@@ -1,7 +1,8 @@
 #!/bin/bash
 
 ############### HOT MESS ###################################
-
+#Get git for ps1
+source ~/.git-prompt.sh
 #export PATH='/usr/local/bin:$PATH'
 export PATH=$HOME/Developer/Scripts:$PATH
 
@@ -34,7 +35,7 @@ $(tput setaf 1)IP Addresses.......: $(tput setaf 6)`ipconfig getifaddr en0` and 
 $(tput sgr0)"
 
 #Bring in all the dotfiles
-for file in ~/dotfiles/includesBash/{aliases,colors,commands,gitcompletetion,git-prompt.sh,export,cnbashrc,funtions,git,work,mine}; do
+for file in ~/dotfiles/includesBash/{aliases,colors,commands,golf,gitcompletetion,git-prompt.sh,.cnbashrc,export,cnbashrc,funtions,git,work,mine}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
@@ -66,15 +67,11 @@ function ffind(){
 
 #Pizzq Prompt 
 #PS1="[\[\033[36m\]\u\[\033[37m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]]$ "
-PS1="🍕 \[$(tput setaf 2)\] \W \[$(tput setaf 3)\]$ \[$(tput setaf 7)\]"
+PS1="🍕 \[$(tput setaf 2)\] \W $(__git_ps1 "\[$(tput setaf 5)\](%s)") \[$(tput setaf 3)\]$ \[$(tput setaf 7)\]"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$PATH:$EC2_HOME/bin
 export testNumber='+19173650744'
-#export NODE_COPILOT_API='localhost'
-#export NODE_COPILOT_PORT='8080'
-#export AUTOPILOT_SDKPORT='8080'
-
 #RAM FOR MAVEN
 #export MAVEN_OPTS="-XX:MaxPermSize=512m -Dmaven.test.skip=true";
 

@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/projects/vsdweb'
-let g:netrw_dirhist_2='/projects/vsdweb/src-fewd/resources'
-let g:netrw_dirhist_3='/Users/jmcgarrity/dotfiles'
+let g:netrw_dirhist_1='/Users/jmcgarr1/Developer/workspace/hg/jmcgarr1_golfdigest_IOS8FIX/sites/golfdigest/mobify/golfdigest/src/js'
+let g:netrw_dirhist_2='/Users/jmcgarr1/Developer/workspace/hg/jmcgarr1_golfdigest_IOS8FIX/sites/golfdigest/mobify/golfdigest/src'
+let g:netrw_dirhist_3='/Users/jmcgarr1/Developer/workspace/hg/jmcgarr1_golfdigest_IOS8FIX/sites/golfdigest/mobify/golfdigest/src/js'
