@@ -47,6 +47,7 @@ sites/*/private
 */sites/*/settings*.php
 */sites/*/files/
 */sites/*/private/
+*/bundleOLDCOPY/*
 
 # Other #
 #########
