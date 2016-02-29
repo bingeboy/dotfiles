@@ -1,19 +1,21 @@
 #!/bin/bash
 
-############### HOT MESS ###################################
 #Get git for ps1
 source ~/.git-prompt.sh
-export PATH=$HOME/Developer/Scripts:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/share/:$PATH
+export PATH=/Users/jp/local/selectedNodeVersion:/Users/jp/local/bin:/usr/local/bin:/Developer/Scripts:/bin:/usr/local/sbin:/usr/bin:/sbin:/usr/sbin:/usr/local/share:/bin
 
-#:$GOPATH/bin
-#sudo nvram boot-args="-v"
-#sudo nvram SystemAudioVolume=%80
 #Set Editor
-export VISUAL= vim
+export VISUAL=vim
 export EDITOR=$VISUAL
-#export VIM=/usr/local/share/vim 
+#export VIM=/usr/local/share/vim
 set -o vi
 
+#gd parsely
+export PARSELY_APIKEY=golfdigest.com
+export PARSELY_SECRET=qRADYsk8W3VmFjeksm08p95oyVotB83Sg3Adsx3m534
+
+#gd HOT LIST 2016
+#export FLAG_HOT_LIST_2016=true
 
 # init z https://github.com/rupa/z
 . ~/dotfiles/z/z.sh
@@ -22,10 +24,10 @@ set -o vi
 export ARCHFLAGS="-arch x86_64"
 
 bell=`tput bel`
-precmd () { 
+precmd () {
     echo -n "$status $bell"
 }
-PROMPT='(#.#.>)%b ' 
+PROMPT='(#.#.>)%b '
 RPROMPT=''
 
 #Welcome Screen
@@ -35,12 +37,10 @@ $(tput setaf 1)IP Addresses.......: $(tput setaf 6)`ipconfig getifaddr en0` and 
 $(tput sgr0)"
 
 #Bring in all the dotfiles
-for file in ~/dotfiles/includesBash/{aliases,colors,commands,golf,gitcompletetion,git-prompt.sh,.cnbashrc,export,cnbashrc,funtions,git,work,mine}; do
+for file in ~/dotfiles/includesBash/{aliases,colors,commands,conde,gitcompletetion,git-prompt.sh,.cnbashrc,export,funtions,git,work,mine}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
-
-#for file in ~/dotfiles/includesBash/.{aliases,colors,commands,export,cnbashrc,functions,svnextras,work,mine,osx}; do
 
 function git_info() {
 	# check if we're in a git repo
@@ -64,33 +64,18 @@ function ffind(){
  find ./ -iname $1
 }
 
-
-#Pizzq Prompt 
-#PS1="[\[\033[36m\]\u\[\033[37m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]]$ "
-PS1="🍕 \[$(tput setaf 2)\] \W $(__git_ps1 "\[$(tput setaf 5)\](%s)") \[$(tput setaf 3)\]$ \[$(tput setaf 7)\]"
+PS1="\[$GREEN\]\[$RED\]\[$BLUE\]\u\[$YELLOW\] $(tput setaf 2)\]•$(tput setaf 5)\] \W\[$YELLOW\]\[\033[m\]\[$MAGENTA\]\$(__git_ps1)\[$WHITE\] $ "
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$PATH:$EC2_HOME/bin
 export testNumber='+19173650744'
-#RAM FOR MAVEN
-#export MAVEN_OPTS="-XX:MaxPermSize=512m -Dmaven.test.skip=true";
+# ^ my god damn phone number
 
 alias tailmongo='tail -f /usr/local/var/log/mongodb/mongo.log'
-alias golfpro='cd ~/golf/projects/golfdigest'
 
 #git auto complete
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-#RVM not installed kid! Uncomment the below when you install 
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-#eval "$(rbenv init -)"
-
-#old commened out hotness when you have a fast connection 
-
-#$(tput setaf 1)Weather............: $(tput setaf 3)Brooklyn `curl -s "http://rss.accuweather.com/rss/liveweather_rss.asp?metric=211&LOCCODE=11211" | sed -n '/Currently:/ s/.*: \(.*\): \([0-9]*\)\([CF]\).*/\2°\3, \1/p'`
-
-
-export NVM_DIR="/Users/jmcgarr1/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+source ~/.bashrc

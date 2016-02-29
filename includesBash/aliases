@@ -1,10 +1,12 @@
 alias tailmongo='tail -f /usr/local/var/log/mongodb/mongo.log'
 
 #conde move to work file
-alias golfpro='cd ~/golf/projects/golfdigest'
-alias golfserv='cd ~/golf/projects/gd-services'
-alias golfdev="cd ~/Developer/workspace/hg/"
+alias ac='cd ~/conde/projects/autopilot-components'
+alias gq='cd ~/conde/projects/autopilot-gq'
+alias tnv='cd ~/conde/projects/autopilot-teen-vogue'
 
+#hotdog
+alias c='pygmentize -O style=monokai -f console256 -g'
 
 #Easier navigation: .., ..., ~ and -
 alias ..="cd .."

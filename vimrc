@@ -2,10 +2,9 @@ set shell=/bin/bash
 " put this line first in ~/.vimrc
 set nocompatible | filetype indent plugin on | syn on
 "set nocompatible
-
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 "Allow F2 key to toggle paste from outside of vim and retain indents
 set pastetoggle=<F2>
-set clipboard=unnamed
 "Set up the clipboard to be shared across termi windows"
 set clipboard=unnamed
 
@@ -24,14 +23,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 " required! 
 "Bundle 'gmarik/vundle'
 execute pathogen#infect('bundle/{}', '~/.vim/bundle/{}')
-"execute pathogen#infect()
-"Helptags
-"let g:powerline_loaded = 0
-"let g:Powerline_symbols = 'fancy'
 let mapleader = ","
-"let g:Powerline_symbols = 'unicode'
 syntax on  "Enables syntax highlighting for programming languages
 set mouse=a  "Allows you to click around the text editor with your mouse to move the cursor
+set cursorline
 set showmatch "Highlights matching brackets in programming languages
 set matchtime=2
 set autoindent  "If you're indented, new lines will also be indented
@@ -52,7 +47,6 @@ set history=500 " Increase history from 20 default to 1000
 " using 256 colors (or 88 colors) if your terminal supports it,
 " but does not automatically use 256 colors by default.
 set t_Co=256
-"set t_Co=88
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 
 colorscheme molokai "Changes the color scheme. Change this to your liking. Lookin /usr/share/vim/vim73/colors/ for options.
