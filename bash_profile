@@ -2,7 +2,7 @@
 
 #Get git for ps1
 source ~/.git-prompt.sh
-export PATH=/Users/jp/local/selectedNodeVersion:/Users/jp/local/bin:/usr/local/bin:/Developer/Scripts:/bin:/usr/local/sbin:/usr/bin:/sbin:/usr/sbin:/usr/local/share:/bin
+export PATH=/Users/$USER/local/selectedNodeVersion:/Users/bingeboy/local/bin:/usr/local/bin:/Developer/Scripts:/bin:/usr/local/sbin:/usr/bin:/sbin:/usr/sbin:/usr/local/share:/bin
 
 #Set Editor
 export VISUAL=vim
@@ -66,10 +66,7 @@ function ffind(){
 
 PS1="\[$GREEN\]\[$RED\]\[$BLUE\]\u\[$YELLOW\] $(tput setaf 2)\]•$(tput setaf 5)\] \W\[$YELLOW\]\[\033[m\]\[$MAGENTA\]\$(__git_ps1)\[$WHITE\] $ "
 
-export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$PATH:$EC2_HOME/bin
-export testNumber='+19173650744'
-# ^ my god damn phone number
 
 alias tailmongo='tail -f /usr/local/var/log/mongodb/mongo.log'
 
