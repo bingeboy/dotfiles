@@ -2,7 +2,7 @@
 
 #Get git for ps1
 source ~/.git-prompt.sh
-export PATH=/Users/$USER/local/selectedNodeVersion:/Users/bingeboy/local/bin:/usr/local/bin:/Developer/Scripts:/bin:/usr/local/sbin:/usr/bin:/sbin:/usr/sbin:/usr/local/share:/bin
+export PATH=/Users/$USER/local/node_modules/npm:/Users/$USER/local/selectedNodeVersion:/Users/$USER/local/bin:/usr/local/bin:/Developer/Scripts:/bin:/usr/local/sbin:/usr/bin:/sbin:/usr/sbin:/usr/local/share:/bin
 
 #Set Editor
 export VISUAL=vim
@@ -69,6 +69,8 @@ PS1="\[$GREEN\]\[$RED\]\[$BLUE\]\u\[$YELLOW\] $(tput setaf 2)\]•$(tput setaf 5
 export PATH=$PATH:$EC2_HOME/bin
 
 alias tailmongo='tail -f /usr/local/var/log/mongodb/mongo.log'
+
+alias vpn='yes yes | python vpn-script.py'
 
 #git auto complete
 if [ -f ~/.git-completion.bash ]; then

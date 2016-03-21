@@ -48,7 +48,7 @@ set history=500 " Increase history from 20 default to 1000
 " but does not automatically use 256 colors by default.
 set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
-
+let g:syntastic_javascript_checkers = ['eslint']
 colorscheme molokai "Changes the color scheme. Change this to your liking. Lookin /usr/share/vim/vim73/colors/ for options.
 setlocal spell  "Enables spell checking (CURRENTLY DISABLED because it's kinda annoying). Make sure to uncomment the next line if you use this.
 "set spellfile=~/.vimwords.add  "The location of the spellcheck dictionary. Uncomment this line if you uncomment the previous line.
