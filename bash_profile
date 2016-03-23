@@ -1,8 +1,10 @@
 #!/bin/bash
 
 #Get git for ps1
+#npm@3 here: /usr/local/bin/npm
+#npm@2 here: /usr/local/node_modules/npm
 source ~/.git-prompt.sh
-export PATH=/Users/$USER/local/node_modules/npm:/Users/$USER/local/selectedNodeVersion:/Users/$USER/local/bin:/usr/local/bin:/Developer/Scripts:/bin:/usr/local/sbin:/usr/bin:/sbin:/usr/sbin:/usr/local/share:/bin
+export PATH=/Users/$USER/local/bin/npm:/Users/$USER/local/selectedNodeVersion:/Users/$USER/local/bin:/usr/local/bin:/Developer/Scripts:/bin:/usr/local/sbin:/usr/bin:/sbin:/usr/sbin:/usr/local/share:/bin
 
 #Set Editor
 export VISUAL=vim

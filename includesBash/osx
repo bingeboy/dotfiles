@@ -8,6 +8,9 @@
 #sudo nvram boot-args="-v"
 sudo nvram SystemAudioVolume=%10﻿
 
+# Turn off GateKeeper
+sudo spctl --master-disable
+
 #show dot files and everythign else
 defaults write com.apple.finder AppleShowAllFiles -bool YES
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
