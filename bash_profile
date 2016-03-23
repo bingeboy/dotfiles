@@ -1,9 +1,11 @@
 #!/bin/bash
 
 #Get git for ps1
-#npm@3 here: /usr/local/bin/npm
-#npm@2 here: /usr/local/node_modules/npm
-export PATH=/Users/$USER/local/bin/npm:/Users/$USER/local/selectedNodeVersion:/Users/$USER/local/bin:/usr/local/bin:/Developer/Scripts:/bin:/usr/local/sbin:/usr/bin:/sbin:/usr/sbin:/usr/local/share:/bin
+#npm@2 here:
+#NPM2=/usr/local/node_modules/npm
+NPM2=/Users/bingeboy/local/lib/node_modules/npm
+NPM3=/usr/local/bin/npm
+export PATH=$NPM2:/Users/$USER/local/selectedNodeVersion:/Users/$USER/local/bin:/usr/local/bin:/Developer/Scripts:/bin:/usr/local/sbin:/usr/bin:/sbin:/usr/sbin:/usr/local/share:/bin
 
 #Set Editor
 export VISUAL=vim
@@ -69,3 +71,4 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 source ~/.bashrc
+alias gitrebase2='git add -A && git commit -m'f' && git rebase -i HEAD~2'
