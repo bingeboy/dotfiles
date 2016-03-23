@@ -3,7 +3,6 @@
 #Get git for ps1
 #npm@3 here: /usr/local/bin/npm
 #npm@2 here: /usr/local/node_modules/npm
-source ~/.git-prompt.sh
 export PATH=/Users/$USER/local/bin/npm:/Users/$USER/local/selectedNodeVersion:/Users/$USER/local/bin:/usr/local/bin:/Developer/Scripts:/bin:/usr/local/sbin:/usr/bin:/sbin:/usr/sbin:/usr/local/share:/bin
 
 #Set Editor
@@ -11,16 +10,6 @@ export VISUAL=vim
 export EDITOR=$VISUAL
 #export VIM=/usr/local/share/vim
 set -o vi
-
-#gd parsely
-export PARSELY_APIKEY=golfdigest.com
-export PARSELY_SECRET=qRADYsk8W3VmFjeksm08p95oyVotB83Sg3Adsx3m534
-
-#gd HOT LIST 2016
-#export FLAG_HOT_LIST_2016=true
-
-# init z https://github.com/rupa/z
-. ~/dotfiles/z/z.sh
 
 # Set architecture flags
 export ARCHFLAGS="-arch x86_64"
