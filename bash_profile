@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#set a higher than default ulimit.
+ulimit -n 4096
+
 #Get git for ps1
 #npm@2 here:
 #NPM2=/usr/local/node_modules/npm
