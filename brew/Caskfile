@@ -12,6 +12,14 @@ install brew-cask
 
 cask install atom
 cask install discord
-cask install google-chrome
 cask install kindle
 cask install spectacle
+cask install handbrake
+cask install google-chrome
+cask install imageoptim
+cask install iterm2
+cask install macvim
+cask install the-unarchiver
+cask install transmission
+cask install vlc
+cask install spectical
